@@ -3,7 +3,7 @@ name: Alight Organization Build Pipeline
 on:
   push:
     branches:
-      - main
+      - develop
 jobs:
   cicd-pipeline:
     uses: AlightEngineering/Alight-Digital-Architecture_CI-Pipeline/.github/workflows/build-pipeline.yaml@main

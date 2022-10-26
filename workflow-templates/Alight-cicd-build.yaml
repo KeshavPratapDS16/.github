@@ -1,4 +1,4 @@
-name: Alight Organization CI
+name: Alight Organization Build Pipeline
 
 on:
   push:

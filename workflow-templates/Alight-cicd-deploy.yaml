@@ -1,9 +1,0 @@
-name: Alight Organization Deploy Pipeline
-
-on:
-  repository_dispatch:
-    types:
-      - deploy
-jobs:
-  cicd-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/deploy-pipeline.yaml@main

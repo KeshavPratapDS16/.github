@@ -6,4 +6,5 @@ on:
       - develop
 jobs:
   cicd-pipeline:
-    uses: AlightEngineering/Alight-Digital-Architecture_CI-Pipeline/.github/workflows/build-pipeline.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/build-pipeline.yaml@main
+    secrets: inherit

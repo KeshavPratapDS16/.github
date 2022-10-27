@@ -3,8 +3,10 @@ name: Alight Organization Build Pipeline
 on:
   push:
     branches:
+      - develop
       - main
+      - main-rc
 jobs:
-  cicd-pipeline:
+  cicd-Build-pipeline:
     uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/build-pipeline.yaml@main
     secrets: inherit

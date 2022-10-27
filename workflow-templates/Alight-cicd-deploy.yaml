@@ -5,6 +5,6 @@ on:
     types:
       - deploy
 jobs:
-  cicd-pipeline:
+  cicd-Deploy-pipeline:
     uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/deploy-pipeline.yaml@main
     secrets: inherit

@@ -1,0 +1,33 @@
+name: Alight Organization QC/PROD Angular Deploy Pipeline
+run-name: Alight Organization QC/PROD Angular Deploy Pipeline for ${{ inputs.tag }} 
+on:
+  workflow_dispatch:
+    inputs:
+      Lifecycle:
+        type: choice
+        description: 'Life Cycle'
+        required: true
+        options: 
+        - qc
+        - pu
+      Type:
+        type: choice
+        description: 'Angular Type'
+        required: true 
+        options: 
+        - UPN-NG13
+        - EDVBase
+        - UpointFedDcNG13Base
+        - UPN-WC
+      Tag:
+        description: Tag to be Promoted.
+        required: true
+        type: string       
+      Update_TOMI:
+        description: Update TOMI.
+        required: true
+        type: boolean
+jobs:
+  QC-PROD-Angular-pipeline:
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/QC-PROD-Pipeline-For-Angular.yaml@main
+    secrets: inherit

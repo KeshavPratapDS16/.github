@@ -1,5 +1,5 @@
 name: Alight Organization QC/PROD Angular Deploy Pipeline
-run-name: Alight Organization QC/PROD Angular Deploy Pipeline for ${{ inputs.tag }} 
+run-name: QC/PROD Angular Deploy Pipeline for ${{ inputs.tag }} 
 on:
   workflow_dispatch:
     inputs:

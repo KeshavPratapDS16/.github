@@ -6,5 +6,5 @@ on:
       - deployHotfix
 jobs:
   cicd-Deploy-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Deploy-Pipeline.yaml@angular-trunk-model
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Deploy-Pipeline.yaml@main
     secrets: inherit

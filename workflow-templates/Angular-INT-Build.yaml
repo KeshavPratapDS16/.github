@@ -1,4 +1,4 @@
-name: Alight Organization INT Build Pipeline
+name: Alight Org INT Build Pipeline
 
 on:
   push:

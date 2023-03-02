@@ -19,5 +19,5 @@ on:
         type: string    
 jobs:
   WC-Test-Pipeline-For-Angular:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/WC-Test-Pipeline-For-Angular.yaml@angular-trunk-model
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/WC-Test-Pipeline-For-Angular.yaml@main
     secrets: inherit

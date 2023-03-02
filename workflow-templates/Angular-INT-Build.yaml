@@ -6,5 +6,5 @@ on:
       - main
 jobs:
   cicd-Build-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/build-pipeline.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/build-pipeline.yaml@angular-trunk-model
     secrets: inherit

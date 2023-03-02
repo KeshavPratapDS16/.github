@@ -6,5 +6,5 @@ on:
       - deploy
 jobs:
   cicd-Deploy-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/deploy-pipeline.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/deploy-pipeline.yaml@angular-trunk-model
     secrets: inherit

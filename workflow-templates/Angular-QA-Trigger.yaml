@@ -22,5 +22,5 @@ on:
         type: boolean  
 jobs:
   QA-Angular-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/QA-Pipeline-For-Angular.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/QA-Pipeline-For-Angular.yaml@angular-trunk-model
     secrets: inherit  

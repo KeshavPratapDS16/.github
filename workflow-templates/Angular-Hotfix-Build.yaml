@@ -1,4 +1,4 @@
-name: Alight Organization Hotfix Angular Build Pipeline
+name: Alight Org Hotfix Angular Build Pipeline
 run-name:  Build on ${{ inputs.branch }} promoting to ${{ inputs.lifecycle }}
 on:
   workflow_dispatch:

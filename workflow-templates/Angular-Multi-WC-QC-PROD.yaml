@@ -21,5 +21,5 @@ on:
         type: string    
 jobs:
   WC-QC-PROD-Pipeline-For-Angular:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/WC-QC-PROD-Pipeline-For-Angular.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/WC-QC-PROD-Pipeline-For-Angular.yaml@angular-trunk-model
     secrets: inherit

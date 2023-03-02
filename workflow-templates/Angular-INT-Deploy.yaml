@@ -1,5 +1,5 @@
 name: Alight Org INT Deploy Pipeline
-run-name: Deploy of ${{ github.event.client_payload.branch }} to ${{ github.event.client_payload.Lifecycle }} lifecycle
+run-name: Deploy of ${{ github.event.client_payload.branch }}(${{ github.event.client_payload.sha }}) to ${{ github.event.client_payload.Lifecycle }} lifecycle
 on:
   repository_dispatch:
     types:

@@ -1,4 +1,4 @@
-name: Alight Organization Hotfix Angular Deploy Pipeline
+name: Alight Org Hotfix Angular Deploy Pipeline
 run-name: Deploy of ${{ github.event.client_payload.tag }} to ${{ github.event.client_payload.Lifecycle }} lifecycle
 on:
   repository_dispatch:

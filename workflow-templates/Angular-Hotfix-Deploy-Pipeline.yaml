@@ -1,0 +1,10 @@
+name: Alight Organization Hotfix Angular Deploy Pipeline
+run-name: Hotfix deploy for ${{ github.event.client_payload.tag }}
+on:
+  repository_dispatch:
+    types:
+      - deployHotfix
+jobs:
+  cicd-Deploy-pipeline:
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Deploy-Pipeline.yaml@angular-trunk-model
+    secrets: inherit

@@ -1,10 +1,10 @@
 name: Alight Org Hotfix Angular Deploy Pipeline
-run-name: Deploy of ${{ github.event.client_payload.tag }} to ${{ github.event.client_payload.Lifecycle }} lifecycle
+run-name: Deploy of ${{ github.event.client_payload.branch }} to ${{ github.event.client_payload.Lifecycle }} lifecycle
 on:
   repository_dispatch:
     types:
       - deployHotfix
 jobs:
   cicd-Deploy-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Deploy-Pipeline.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Deploy-Pipeline.yaml@angular-trunk-model
     secrets: inherit

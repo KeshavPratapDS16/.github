@@ -30,5 +30,5 @@ on:
         type: boolean  
 jobs:
   Hotfix-Angular-pipeline:
-    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Build-Pipeline.yaml@main
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Build-Pipeline.yaml@angular-trunk-model
     secrets: inherit  

@@ -1,4 +1,4 @@
-name: Alight Organization INT Deploy Pipeline
+name: Alight Org INT Deploy Pipeline
 run-name: Deploy of ${{ github.event.client_payload.tag }} to ${{ github.event.client_payload.Lifecycle }} lifecycle
 on:
   repository_dispatch:

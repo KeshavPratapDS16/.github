@@ -1,0 +1,34 @@
+name: Alight Organization Hotfix Angular Build Pipeline
+run-name:  Hotfix build on ${{ inputs.branch }} promoting to ${{ inputs.lifecycle }}
+on:
+  workflow_dispatch:
+    inputs:
+      Lifecycle:
+        type: choice
+        description: 'LifeCycle'
+        required: true
+        options: 
+        - qa
+        - qc
+        - pu
+      Type:
+        type: choice
+        description: 'Angular Type'
+        required: true 
+        options: 
+        - UPN-NG13
+        - EDVBase
+        - UpointFedDcNG13Base
+        - UPN-WC    
+      Branch:
+        description: Hotfix branch to be built and promoted.
+        required: true
+        type: string       
+      Update_TOMI:
+        description: Update TOMI.
+        required: true
+        type: boolean  
+jobs:
+  Hotfix-Angular-pipeline:
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/Hotfix-Angular-Build-Pipeline.yaml@angular-trunk-model
+    secrets: inherit  

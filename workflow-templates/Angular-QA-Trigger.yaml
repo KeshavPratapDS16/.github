@@ -1,4 +1,4 @@
-name: Alight Organization QA Angular Deploy Pipeline
+name: Alight Org QA Angular Deploy Pipeline
 run-name: QA Deploy for ${{ inputs.tag }} 
 on:
   workflow_dispatch:

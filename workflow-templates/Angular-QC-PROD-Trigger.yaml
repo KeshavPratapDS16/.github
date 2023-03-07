@@ -1,4 +1,4 @@
-name: Alight Org QC/PROD Angular Deploy Pipeline
+name: Alight Org QC/PROD CDN Migration Pipeline
 run-name: ${{ inputs.lifecycle }} Deploy Pipeline for ${{ inputs.tag }} 
 on:
   workflow_dispatch:

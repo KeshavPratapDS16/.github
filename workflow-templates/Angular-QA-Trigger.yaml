@@ -3,23 +3,10 @@ run-name: QA Deploy of ${{ inputs.tag }}
 on:
   workflow_dispatch:
     inputs:
-      Type:
-        type: choice
-        description: 'Angular Type'
-        required: true 
-        options: 
-        - UPN-NG13
-        - EDVBase
-        - UpointFedDcNG13Base
-        - UPN-WC    
       Tag:
         description: Feature tag to be promoted.
         required: true
-        type: string       
-      Update_TOMI:
-        description: Update TOMI.
-        required: true
-        type: boolean  
+        type: string
 jobs:
   QA-Angular-pipeline:
     uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/QA-Pipeline-For-Angular.yaml@main

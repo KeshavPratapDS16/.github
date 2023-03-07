@@ -1,0 +1,26 @@
+name: Alight Org QA CDN Migration Pipeline
+run-name: QA CDN Migration of ${{ inputs.tag }} 
+on:
+  workflow_dispatch:
+    inputs:
+      Type:
+        type: choice
+        description: 'Angular Type'
+        required: true 
+        options: 
+        - UPN-NG13
+        - EDVBase
+        - UpointFedDcNG13Base
+        - UPN-WC    
+      Tag:
+        description: Qa tag to be promoted to CDN.
+        required: true
+        type: string       
+      Update_TOMI:
+        description: Update TOMI.
+        required: true
+        type: boolean  
+jobs:
+  QA-Angular-pipeline:
+    uses: AlightEngineering/ADA-CI-Pipeline/.github/workflows/QA-CDN-Pipeline-For-Angular.yaml@main
+    secrets: inherit  
